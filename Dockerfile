@@ -1,5 +1,6 @@
-FROM openjdk:8
-
+#FROM openjdk:8 // to get ARM support have to use adoptopenjdk
+FROM adoptopenjdk:8u272-b10-jre-hotspot-focal
+                  
 COPY ./clouseau-2.17.0 /app/
 COPY ./config/clouseau/ /config/
 
